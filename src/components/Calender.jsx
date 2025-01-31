@@ -1,14 +1,34 @@
 import React from "react";
 import "./calender.css"
+import { useState } from "react";
+import DaysOfMonths from "./daysOfMonth";import Day from "./day";
+ "./daysOfMonth"
 
 function Calender(){
+    const [date,setDate] = useState("");
+    const months = [
+        "January","February","March","April","May",
+        "June","July","August","September","October"
+        ,"November","December",
+    ];
+    const days = [
+        "monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+    ]
+    let today = new Date();
+    let day = today.getDate();
+    let dayOfWeek = today.getDay();
+    let month = today.getMonth();
+    let year = today.getFullYear();
+
+    
+
 
     return (
         <div className="left">
             <div className="calendar">
             <div className="month">
                 <i className="fas fa-angle-left prev"></i>
-                <div className="date">december 2015</div>
+                <div className="date">{days[dayOfWeek] +" " + day + " " + months[month] + " " + year}</div>
                 <i className="fas fa-angle-right next"></i>
             </div>
             <div className="weekdays">
@@ -20,6 +40,7 @@ function Calender(){
                 <div>Fri</div>
                 <div>Sat</div>
             </div>
+            <Day/>
             <div className="days"></div>
             <div className="goto-today">
                 <div className="goto">
