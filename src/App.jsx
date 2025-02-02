@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import Container from './Container'
-
+import Header from './components/Header'
 
 function App() {
- 
 
   return (
     <>
-      <Container/>
+      <Header/>
     </>
   )
 }
