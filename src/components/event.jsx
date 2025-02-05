@@ -1,36 +1,42 @@
 import React from "react";
 import "./event.css"
+import { useState } from "react";
 
 
-const Event = ()=>{
+const Event = (props)=>{
+
+
+    
 
     return(
-        <div className="container border-1 w-48 h-35 
-        bg-[url(/img.jpg)] bg-cover bg-center
-        p-1
-        ">
+        <div className='container border-1 w-48 h-35 
+        bg-cover bg-center
+        p-1' style={{backgroundImage:`url(${props.image})`}}>
             <div className="contenair border-1 w-full h-full p-3
             bg-gray-900/90
             ">
                 <section className="date">
                     <p className="day text-xs text-gray-100">
-                        Fri
+                        {props.day}
                     </p>
                     <p className="hour text-2xl text-white font-bold">
-                        8:50
+                        {props.hour}
                     </p>
                 </section>
-                <section className="event border-1 h-12 overflow-hidden overflow-ellipsis ">
+                <section className="event h-12 overflow-hidden overflow-ellipsis ">
                     <span className="title text-white text-sm font-semibold">
-                        Lorem:
+                        {props.title}
                     </span>
-                    <span className="description ml-1">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe et quo ipsa natus accusantium harum.
+                    <span className="description ml-1 text-gray-400 text-xs">
+                        {props.message}
                     </span>
                 </section>
-                <section className="localisation">
-                    <span>
-                        France,Paris
+                <section className="localisation text-xs text-blue-200 font-[500]">
+                    <span className="country ">
+                        {props.country}
+                    </span>,
+                    <span className="town">
+                        {props.town}
                     </span>
                 </section>
             </div>
