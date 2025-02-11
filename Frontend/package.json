@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   
-  "homepage": "https://ONAMBELE.github.io/Planning_Manager",
+  "homepage": "https://ONAMBELE.github.io/Planning_Manager/Frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
