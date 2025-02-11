@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   
-  "homepage": "https://ONAMBELE.github.io/Planning_Manager/Frontend",
+  "homepage": "https://ONAMBELE.github.io/Planning_Manager",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +12,7 @@
     "preview": "vite preview",
     
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
 
   },
   "dependencies": {
