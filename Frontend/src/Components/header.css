@@ -1,0 +1,179 @@
+
+
+
+.Header{
+    background-color: var(--black1);
+    width: 100%;
+    height: 3em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--grey1);
+    z-index: 100;
+}
+
+.Header .left{
+    margin-left: 1em;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3em;
+}
+
+.left .logo{
+    font-weight: lighter;
+    font-family: "poppins-bold";
+    color: var(--grey3);
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 14%;
+}
+
+.left .logo img{
+    width: 2em;
+    height: 2em;
+    background-color: var(--blue3);
+}
+
+.left ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.left ul img{
+    width: 1em;
+    height: 1em;
+    transition: 1s;
+}
+
+.left ul li{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.left ul img:hover{
+    align-self: end;
+    background-color: var(--black1);
+}
+
+.left ul li button{
+    border: 0;
+    outline: 0;
+    color: var(--grey3);
+    font-weight: 700;
+    font-size: 14px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.left ul li .create{
+    height: 100%;
+    color: var(--black2);
+    background-color: var(--blue1);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+/*=================================================*/
+
+
+.right{
+    margin-right: 1em;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3em;
+}
+
+.right .searchBar{
+    width: 65%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.25em;
+    border-radius: 5px;
+    border: 1px solid var(--grey1);
+}
+
+.right .searchBar input::placeholder{
+    color: var(--grey4);   
+}
+
+.right .searchBar input{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: aliceblue;
+
+}
+
+.right .searchBar img{
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 0.5em;
+}
+
+.right .user{
+    height: 65%;    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.5em;
+    margin-left: 0.5em;
+}
+
+
+.right img,.profil{
+    width: 1.95em;
+    height: 1.75em;
+}
+
+.right .user a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "poppins";
+    letter-spacing: 2px;
+    color: white;
+}
+
+.right .user a:nth-child(1){
+    padding: 0.125em;
+    background-color: rgb(61, 52, 52);
+}
+
+.right .user a:nth-child(1) img{
+    transform: rotate(50deg);
+}
+
+.right .user a:nth-child(2), a:nth-child(3){
+    border: 2px solid var(--grey1);
+    border-radius: 100%;
+}
+
+.right .user a:nth-child(2) img{
+    width: 1em ;
+    height: 1em;
+    padding:0.125em;
+}
+
+.right .user a:last-child{
+    background-color: red;
+    border: 1px none black;
+}
+

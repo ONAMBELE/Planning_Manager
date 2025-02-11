@@ -1,0 +1,93 @@
+
+
+.BoardsSection{
+    margin-top: 1.5em;
+    position: relative;
+    width: 70%;
+    z-index: 1;
+}
+
+.BoardsSection .mostPopular .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+}
+
+.BoardsSection .content header{
+    margin-bottom: 1em;
+}
+
+.BoardsSection .mostPopular h2{
+    display: flex;
+    align-items: start;
+    color: var(--grey1);
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    height: max-content;
+}
+
+.BoardsSection .mostPopular h2 p{
+    padding: 0;
+    margin: 0;
+}
+
+.BoardsSection .mostPopular h2 img{
+    width: 1.25em;
+    height: 1.4em;
+}
+
+.BoardsSection .content label{
+    font-size: 15px;
+    color: var(--grey3);
+}
+
+.BoardsSection .content select{
+    color: var(--grey1);
+    padding: 0.75em 3em 0.75em 0.25em;
+    border-radius: 5px;
+    outline: 0;
+    background-color: rgb(21, 23, 24);
+
+}
+
+.BoardsSection .content main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+
+.BoardsSection .recentlyViewed{
+    margin-top: 5em;
+}
+
+.BoardsSection .recentlyViewed h3{
+    margin: 0 0 1.5em 0;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    font-size: 18px;
+    color: var(--grey1);
+
+}
+
+.BoardsSection .recentlyViewed h3 p{
+    margin: 0;
+    margin-left: 0.5em;
+}
+
+.BoardsSection .recentlyViewed h3 img{
+    width: 1.5em;
+    height: 1.5em;   
+}
+
+.BoardsSection .recentlyViewed .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}

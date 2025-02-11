@@ -1,0 +1,108 @@
+
+
+.PopUpBuildWorkspace{
+    position: absolute;
+    z-index: 200;
+    background-color: var(--black2);
+    top: 2em;
+    display: none;
+    align-items: center;
+    justify-content: start;
+    width: 27em;
+    padding: 5em;
+    border-radius: 10px;
+}
+
+.PopUpBuildWorkspace .remove{
+    position: absolute;
+    right: 1em;
+    top: -1em;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.PopUpBuildWorkspace form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+
+.PopUpBuildWorkspace form h2{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.PopUpBuildWorkspace form .boost{
+    color: var(--grey1);
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.PopUpBuildWorkspace h4{
+    margin-bottom: 0;
+}
+
+.PopUpBuildWorkspace .name,.description,.type{
+    width: 100%;
+}
+
+.PopUpBuildWorkspace .name input{
+    height: 3em;
+    width: 92%;
+    padding: 0 0.75em 0 1em;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 237, 255);
+}
+
+.PopUpBuildWorkspace .name p{
+    margin: 0;
+    font-size: 13px;
+    color: var(--grey1);
+}
+
+
+.PopUpBuildWorkspace .type select{
+    height: 3em;
+    width: 99%;
+    padding: 0 0.75em 0 1em;
+    border-radius: 5px;
+    border: 1px solid var(--grey3);
+}
+
+.PopUpBuildWorkspace .description {
+    display: flex;
+    flex-direction: column;
+}
+
+.PopUpBuildWorkspace .description h4 span{
+    color: var(--grey1);
+    letter-spacing: 1.25px;
+    font-size: 10px;
+}
+
+.PopUpBuildWorkspace .description textarea{
+    padding: 1em 0.5em 0.5em 1em;
+    margin-bottom: 1em;
+}
+
+.PopUpBuildWorkspace .description span{
+    font-size: 12px;
+    color: var(--grey1);
+}
+
+.PopUpBuildWorkspace button{
+    margin: 1em 0 0.5em 0;
+    height: 3em;
+    border: 0;
+    outline: 0;
+    font-size: large;
+    color: var(--grey4);
+}
+
+.PopUpBuildWorkspace .buttonActive{
+    color: #fff;
+    background-color: var(--blue2);
+
+}

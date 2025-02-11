@@ -1,0 +1,68 @@
+
+.HomeSection *{
+    padding: 0;
+    margin: 0;
+}
+
+.HomeSection{
+    width: 70%;
+
+}
+
+.HomeSection .recentlyViewed-Home{
+    width: 100%;
+    margin: 0;
+}
+
+.HomeSection .recentlyViewed-Home h3{
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    color: var(--grey1);
+    margin-bottom: 2em;
+}
+
+.HomeSection .recentlyViewed-Home img{
+    width: 1.75em;
+    height: 1.75em;
+    margin-right: 0.25em;
+}
+
+.HomeSection .recentlyViewed-Home .content{
+    display: flex;
+}
+
+.HomeSection .links{
+    color: var(--grey1);
+    font-size: 18px;
+    margin-top: 2em;
+}
+
+.HomeSection .links div{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    cursor: pointer;
+
+}
+
+.HomeSection .links div button{
+    font-size: 22px;
+    color: var(--grey1);
+    padding: 0.125em 0.5em 0.125em 0.5em;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: none;
+    margin: 0;
+    margin-right: 0.25em;
+    transform: scale(1.01);
+    background-color: var(--grey4);
+    cursor: pointer;
+
+}
+
+.HomeSection .links div p{
+    font-size: 15px;
+}
