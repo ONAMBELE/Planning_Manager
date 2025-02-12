@@ -2,23 +2,33 @@
 
 .PopUpCreateBoard{
     position: absolute;
-    background-color: rgb(46, 47, 54);
+    background-color: rgb(58, 61, 78);
     top: 1em;
     width: 20em;
-    height: 94vh;
+    height: 40em;
     overflow: hidden;
     z-index: 150;
     border-radius: 5px;
     padding: 1em 1em 0 1em;
     margin: 0;
+    transition: 0.5s ease-in-out;
+    
+}
+
+.top{
+    position: absolute;
+    visibility: hidden;
+    
 }
 
 .PopUpCreateBoard .close{
     position: absolute;
+    top: 0;
     right: 0;
     background-color: transparent;
     border: 0;
     overflow: 0;
+    
 }
 
 .PopUpCreateBoard h3{

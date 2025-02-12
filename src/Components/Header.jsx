@@ -1,10 +1,43 @@
 import React from "react";
 import "./header.css"
+import { useState } from "react";
+import PopUpCreateBoard from "./PopUpCreateBoard";
 
 function Header(){
 
+    const [popUp,setPopUp] = useState("")
+    
+    
+        function createBoard() {
+            console.log("Hello")
+            setPopUp(<PopUpCreateBoard 
+                style={
+                    { 
+                        //top :"-5em",
+                        left:"35em"
+                    }
+                }
+                /*styleBtn={
+                    {   top :"-2em",
+                        width: "1em",
+                        height: "1em",
+                        padding: "2em",
+                    }
+                }
+                styleBtns={
+                    {
+                        width:"21.5em"
+                    }
+                }*/
+            />)
+        }
+
     return(
         <div className="Header">
+            {
+                popUp
+            }
+
             <div className="left">
                 <div className="logo">
                     <img src="/calendar.png" alt="calendar" />
@@ -28,7 +61,10 @@ function Header(){
                         <img src="/expand_arrow.png" alt="" />
                     </li>
                     <li>
-                        <button className="create">Create</button>
+                        <button 
+                            className="create" title="Create Board"
+                            onClick={createBoard}    
+                        >Create</button>
                     </li>
                 </ul>
             </div>

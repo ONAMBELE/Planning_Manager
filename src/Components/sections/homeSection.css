@@ -30,6 +30,9 @@
 
 .HomeSection .recentlyViewed-Home .content{
     display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    margin-left: 1em;
 }
 
 .HomeSection .links{

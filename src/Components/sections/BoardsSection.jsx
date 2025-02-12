@@ -68,7 +68,6 @@ export default function BoardsSection(){
                 <h2>YOUR WORKSPACES</h2>
                 <div className="container">
                     <CardWorkspace/>
-
                 </div>
             </div>
 
@@ -80,7 +79,7 @@ export default function BoardsSection(){
                 <div className="container">
                     <CardRecentlyView
                         name="Basic Board"
-                            image="/img.jpg"
+                        image="/img.jpg"
                     />  
                 </div>
             </div>

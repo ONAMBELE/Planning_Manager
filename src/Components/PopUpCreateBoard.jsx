@@ -2,13 +2,24 @@ import "./popUpCreateBoard.css"
 import React, { useState, useRef, useEffect } from 'react';
 
 
-export default function PopUpCreateBoard() {
-    
-
+export default function PopUpCreateBoard(props) {
+    function closePopUp(e) {
+        console.log(e.target.parentElement.parentElement.classList)
+        e.target.parentElement.parentElement.classList.add("top")
+        console.log(e.target.parentElement.parentElement.classList)
+        setTimeout(() => {
+            window.location.reload()
+        }, 700);
+    }
 
     return(
-        <div className="PopUpCreateBoard">
-            <button className="close">
+        <div className="PopUpCreateBoard"
+            style={props.style}
+        >
+            <button className="close"
+                style={props.styleBtn}
+                onClick={closePopUp}
+            >
                 <img src="/delete1.png" alt="" />
             </button>
             <h3>
@@ -32,11 +43,11 @@ export default function PopUpCreateBoard() {
                     />
                 </div>
                 <div className="colors">
-                    {["white,grey","blue,blue,white",
+                    {["white,grey","blue,var(--blue2),var(--blue1)",
                         "var(--blue2),blue","violet,pink"
                         ,"violet,pink,pink","var(--grey3),var(--grey4)"
                     ].map((colors,index)=>{
-                       return <CardColor color={colors}/>
+                       return <CardColor key={index} color={colors}/>
                     })
 
                     }
@@ -51,8 +62,12 @@ export default function PopUpCreateBoard() {
                         Private
                     </option>
                 </select>
-                <button>Create</button>
-                <button>Start with a template</button>
+                <button 
+                    style={props.styleBtns}
+                >Create</button>
+                <button
+                    style={props.styleBtns}
+                >Start with a template</button>
             </form>
             <p>By using images from Unsplash, you agree to their license and Terms of Services</p>
         </div>
@@ -70,7 +85,6 @@ function CardBackground(props) {
 }
 
 function CardColor(props){
-    console.log(props)
     return (
         <div className="CardColor"
             style={{

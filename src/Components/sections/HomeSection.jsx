@@ -14,7 +14,11 @@ export default function HomeSection() {
                 <div className="content">
                     <CardHomeRecently
                         name="image"
-                        image="/img.jpg"
+                        image="/img1.jpg"
+                    />
+                     <CardHomeRecently
+                        name="image"
+                        image="/img1.jpg"
                     />
                      <CardHomeRecently
                         name="image"
@@ -22,11 +26,11 @@ export default function HomeSection() {
                     />
                      <CardHomeRecently
                         name="image"
-                        image="/img.jpg"
+                        image="/img1.jpg"
                     />
-                     <CardHomeRecently
+                    <CardHomeRecently
                         name="image"
-                        image="/img.jpg"
+                        image="/img1.jpg"
                     />
                 </div>
             </div>
