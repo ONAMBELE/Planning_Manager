@@ -62,6 +62,16 @@
 }
 
 
+.BoardsSection .yourWorkspace h2{
+    color: var(--grey1);
+    font-size: 20px;
+}
+
+.BoardsSection .yourWorkspace .container{
+}
+
+
+
 .BoardsSection .recentlyViewed{
     margin-top: 5em;
 }

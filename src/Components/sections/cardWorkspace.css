@@ -1,0 +1,59 @@
+
+
+.cardWorkspace {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardWorkspace .head{
+    display: flex;
+
+}
+
+.cardWorkspace .head *{
+    padding: 0;
+    margin: 0;
+}
+
+.cardWorkspace .head p:first-child{
+    height: 1em;
+    width: 1em;
+    padding: 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-right: 0.25em;
+    background: linear-gradient(rgba(202, 15, 155, 0.863),var(--blue1),var(--blue1));
+}
+
+.cardWorkspace .head p:last-child{
+    font-weight: 600;
+    color: var(--grey1);
+}
+
+.cardWorkspace .content{
+    margin-top: 1em;
+    margin-left: 3em;
+    display: flex;
+    align-items: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.cardWorkspace button{
+    margin-top: 1em;
+    font-size: 16px;
+    color: whitesmoke;
+    width: 12em;
+    height: 6em;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: rgba(155, 151, 151, 0.192);
+    cursor: pointer;
+}

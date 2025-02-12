@@ -6,6 +6,7 @@ import BoardsSection from "../Components/sections/BoardsSection";
 import TemplatesSection from "../Components/sections/TemplatesSection";
 import HomeSection from "../Components/sections/HomeSection";
 import PopUpBuildWorkspace from "../Components/PopUpBuildWorkspace";
+import PopUpCreateBoard from "../Components/PopUpCreateBoard";
 
 
 
@@ -17,6 +18,7 @@ export default function Workspaces(){
             <Header/>
             <Options/>
             <BoardsSection/>
+            <PopUpCreateBoard/>
             {/*<PopUpBuildWorkspace/>*/}
         </div>
     )

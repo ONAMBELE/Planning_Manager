@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./boardSection.css"
 import CardRecentlyView from "./cardRecentlyView"
 import CardTemplate from "./cardTemplate"
+import CardWorkspace from "./cardWorkspace"
 
 export default function BoardsSection(){
 
@@ -62,6 +63,15 @@ export default function BoardsSection(){
                     </main>
                 </div>
             </div>
+
+            <div className="yourWorkspace">
+                <h2>YOUR WORKSPACES</h2>
+                <div className="container">
+                    <CardWorkspace/>
+
+                </div>
+            </div>
+
             <div className="recentlyViewed">
                 <h3>
                     <img src="/time.png" alt="" />

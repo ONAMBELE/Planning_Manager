@@ -14,6 +14,7 @@ export default function PopUpBuildWorkspace(props) {
     
     function setPopUpVisible(){
         setVisibilityPopUpBuildWorkspace("none")
+        window.location.reload()
     }
     
 
