@@ -9,6 +9,12 @@
     --grey4: #707070;
     --grey3: #999999;
 
+    /*------------- Couleurs réservées aux sections de gestion des taches -------------*/
+    --gray1:#7A8A97;
+    --green:#2ABB7F;
+    --brown: #101204;
+    --gray2:#22272B;
+
 }
 
 @font-face {
@@ -22,4 +28,12 @@
 @font-face {
     font-family: "poppins-light";
     src: url("./assets/Poppins-Thin.ttf");
+}
+
+*{
+    user-select: none;
+}
+
+button{
+    cursor: pointer;
 }

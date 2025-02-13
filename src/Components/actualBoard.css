@@ -1,0 +1,65 @@
+
+
+.ActualBoard{
+    height: 92vh;
+    width: 18%;
+    background-color: #1d2125e0;
+}
+
+.ActualBoard .typeOfSpace{
+    border-bottom: 1px solid var(--grey1);
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black2);
+}
+
+.ActualBoard .typeOfSpace h3{
+    margin: 0;
+    font-size: 15px;
+    color: var(--grey1);
+}
+
+.ActualBoard .typeOfSpace h3 span:first-child{
+    border-radius: 5px;
+    color: black;
+    padding: 0.5em 0.75em;
+    font-size: large;
+    background: linear-gradient(rgb(255, 102, 0),rgb(248, 101, 43),rgb(255, 72, 0));
+    margin-right: 0.5em;
+    box-shadow: 1px 2px 2px rgb(206, 65, 0);
+}
+
+.ActualBoard .typeOfSpace img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.ActualBoard .actualBoard{
+    height: 90%;
+    
+}
+
+.ActualBoard .actualBoard h3{
+    margin: 0.5em 0 0.5em 0.5em;
+    font-size: 18px;
+    color: var(--grey1);
+}
+
+.ActualBoard .actualBoard figure{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    font-weight: 600;
+
+}
+
+.ActualBoard .actualBoard figure img{
+    margin-right: 0.5em;
+    border-radius: 2px;
+    width: 2.5em;
+    height: 2em;
+}
