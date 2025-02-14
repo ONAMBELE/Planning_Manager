@@ -40,7 +40,7 @@ function Header(){
 
             <div className="left">
                 <div className="logo">
-                    <img src="/calendar.png" alt="calendar" />
+                    <img src="/trellox.png" alt="calendar" />
                     <h1>Trello-X</h1>
                 </div>
                 <ul>

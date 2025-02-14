@@ -14,7 +14,9 @@ export default function BoardSpace() {
                 image="/img.jpg"
                 boardName="Madica"
             />
-            <Tasks/>
+            <Tasks
+                
+            />
         </div>
     )
     

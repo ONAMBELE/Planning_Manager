@@ -37,9 +37,12 @@
 }
 
 .left .logo img{
-    width: 2em;
-    height: 2em;
-    background-color: var(--blue3);
+    border: 0;
+    outline: 0;
+    width: 3em;
+    height: 3em;
+    margin-left: -0.5em;
+
 }
 
 .left ul{

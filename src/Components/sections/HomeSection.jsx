@@ -39,7 +39,7 @@ export default function HomeSection() {
             }
             <div className="recentlyViewed-Home">
                 <h3>
-                    <img src="/time.png" alt="" />
+                    <img src="/time.svg" alt="" />
                     <p>Recently viewed</p>
                 </h3>
                 <div className="content">

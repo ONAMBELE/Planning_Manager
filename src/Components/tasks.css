@@ -4,8 +4,16 @@
     width: 82%;
     height: 95vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
+.Tasks .space{
+    position: relative;
+    display: flex;
+    gap: 1em;
+    height: 95vh;
+}
 
 
 /*================== TasksHeader =====================*/
@@ -98,15 +106,16 @@
 /*============================ TaskContainer ================================*/
 
 .TaskContainer{
-    margin: 1em 1em 0 1em;
+    margin: 1em 0.5em 0 1em;
     width: 27%;
-    max-height: 78%;
+    height: max-content;
+    max-height: 75%;
     border-radius: 15px;
-    padding: 1em 0.25em 1em 0.25em;
+    padding: 1em 0.25em 0.5em 0.25em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: var(--brown);
+    position: relative;
 }
 
 .TaskContainer header{
@@ -117,7 +126,6 @@
     font-size: 16px;
     font-weight: 600;
     height: 10%;
-    margin-bottom: 1em;
     padding: 0 1em 0 1em;
 }
 
@@ -132,8 +140,7 @@
     letter-spacing: 3px;
 }
 
-.TaskContainer main{
-    justify-self: start;
+.TaskContainer .main{
     margin: 0;
     width: 100%;
     overflow: hidden;
@@ -141,9 +148,11 @@
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    padding: 0.5em 0 1em 0;
 }
 
 .TaskContainer footer{
+    margin: 0;
     margin-top: 1em;
 }
 
@@ -157,7 +166,16 @@
     background-color: transparent;
     border: 0;
     outline: 0;
-    padding: 0 1em 0 1em;
+    padding: 0.25em 6em 0.25em 0;
+    margin-left: 1em;
+    transition: .2s ease-in-out;
+}
+
+.TaskContainer footer .add:hover{
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.527);
+    color: rgb(255, 239, 239);
 }
 
 .TaskContainer footer img{
@@ -202,7 +220,6 @@
 }
 
 .Task header img:first-child{
-    background-color: red;
     position: absolute;
     bottom: 0;
     left: 0.25em;
@@ -241,4 +258,64 @@
     border-radius: 3px;
     color: black;
     font-weight: 500;
+}
+
+/* ===================== PopUpAddTask ===================== */
+
+.PopUpAddTask *{
+    margin: 0;
+    padding: 0;
+}
+
+.PopUpAddTask{
+    border: 3px solid var(--blue2);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6em;
+    max-height: 8em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--brown);
+}
+
+.PopUpAddTask img{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.PopUpAddTask .value{
+    border:0;
+    background-color: var(--gray1);
+    border-radius: 3px;
+    outline: 0;
+    padding: 0.25em 0.25em 0 0.5em;
+    margin-bottom: 0.25em;
+    word-wrap: break-word;
+    max-height: 80%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.PopUpAddTask button{
+    border: 0;
+    outline: 0;
+    width: 60%;
+    height: 3em;
+    padding: 0.45em 0.45em 0.45em 0.45em;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--blue1);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    transition: .25s ease-in-out;
+}
+
+.PopUpAddTask button:hover{
+    transform: scale(0.95);
 }

@@ -73,7 +73,7 @@ export default function BoardsSection(){
 
             <div className="recentlyViewed">
                 <h3>
-                    <img src="/time.png" alt="" />
+                    <img src="/time.svg" alt="" />
                     <p>Recently viewed</p>
                 </h3>
                 <div className="container">
