@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <BoardSpace/>
+      <Workspaces/>
     </div>
   )
 }

@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  //base: "/Planning_Manager/", // ✅ Chemin correct pour GitHub Pages
+  base: "./", // ✅ Chemin correct pour GitHub Pages
 });
